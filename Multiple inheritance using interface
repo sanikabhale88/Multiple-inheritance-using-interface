@@ -1,0 +1,25 @@
+interface Herbivore {
+    void eatPlants();
+}
+
+interface Carnivore {
+    void eatMeat();
+}
+
+class Animal implements Herbivore, Carnivore {
+    public void eatPlants() {
+        System.out.println("Eating plants");
+    }
+
+    public void eatMeat() {
+        System.out.println("Eating meat");
+    }
+}
+
+public class OOPS {
+    public static void main(String[] args) {
+        Animal animal = new Animal();
+        animal.eatPlants();
+        animal.eatMeat();
+    }
+}
